@@ -1,0 +1,81 @@
+<html>
+<head>
+    <title>A*</title>
+    <meta charset="utf-8">
+    <meta name="author" content="Ondym">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script language="javascript" type="text/javascript" src="p5.min.js"></script>
+    <script language="javascript" type="text/javascript" src="script.js"></script>
+    <script language="javascript" type="text/javascript" src="save-walls.js"></script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: #0a0a0a;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            height: 100vh;
+            width: 100vw;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        main {
+            align-items: center;
+            display: flex;
+            justify-content: center;
+        }
+
+        span {
+            letter-spacing: -2px;
+            position: fixed;
+            text-align: center;
+            width: 100vw;
+            font-size: 3vh;
+            color: #fff;
+            user-select: none;
+        }
+
+        #state {
+            font-size: 8vh;
+            top: .25em;
+            text-transform: uppercase;
+        }
+
+        #key {
+            bottom: 1.45em;
+        }
+
+        #code{
+            width: 80vw;
+            bottom: 1.3em;
+            font-size: 1.4vh;
+        }
+
+        #idString{
+            outline: none;
+            font-family: 'Courier New', Courier, monospace;
+            user-select: all;
+            border: none;
+            color: #fff;
+            background: none;
+            text-align: center;
+            width: 50vw;
+        }
+
+        ::selection{
+            color: #fff;
+            background: rgb(58, 67, 78);
+        }
+    </style>
+</head>
+
+<body>
+    <span id="state">A* algorithm</span>
+    <span id="key">
+        P = toggle algorithm visibility SPACE = toggle pathfinding R = set 10% of nodes to walls
+    </span>
+    <span id="code"><input id="idString" type="text"></span>
+</body>
+
+</html>
